@@ -18,7 +18,6 @@ body{
 
 .left{
 	float: left;
-	font-family: 'Circe' , sans-serif;
 }
 .right{
 	float: right;
@@ -174,32 +173,16 @@ input{
 	display: block;
 	margin: 30px auto 0;
 }
-.red-btn{
-	background: url(../images/left-arrow__white.svg) #ff4350;
-	background-position: right 48px center;
-	background-repeat: no-repeat;
-	background-size: 17px;
-	border-radius: 20px;
-	box-shadow: 0 10px 15px rgba(255, 67, 80, 0.4);
-	color: #ffffff;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 18px;
-	text-transform: uppercase;	
+.blue-btn{
+	transition: 0.3s;
 }
-.red-btn:hover{
-	background: url(../images/left-arrow__white.svg) #ff5e69;
-	background-position: right 48px center;
-	background-repeat: no-repeat;
-	background-size: 17px;	
-	box-shadow: 0 10px 15px rgba(255, 67, 80, 0.4);
+.blue-btn:hover{
+	background: #24aefd;
+	transition: 0.3s;
 }
-.bred-btn:active{
-	background: url(../images/left-arrow__white.svg) #ff717b;
-	background-position: right 48px center;
-	background-repeat: no-repeat;
-	background-size: 17px;		
-	box-shadow: 0 5px 10px rgba(255, 67, 80, 0.4);
+.blue-btn:active{
+	background: #0077bb;
+	transition: 0.3s;
 }
 label.error{
 	display: none !important;
@@ -289,11 +272,7 @@ textarea{
 	box-sizing: border-box;
 }
 .b-container{
-	background: #f9f9f9;
-	padding: 100px 0 0 0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
 }
 .fancybox-container{
 	z-index: 999999;
@@ -306,4 +285,122 @@ textarea{
 .b-header{
 
 }
+.b-header-top > .container > .row > div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.b-logo{
+	font-family: "ProximaNova";
+	padding: 5px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 20px;
+	line-height: 26px;
+	color: #ffffff;
+	display: block;
+	width: 130px;
+	position: relative;
+	text-decoration: none;
+}
+.b-logo:hover{
+	text-decoration: none;
+}
+.b-logo:before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: #64c3f9;
+    width: 100%;
+    height: 56%;
+    z-index: 1;
+}
+.b-logo span{
+    position: relative;
+    z-index: 2;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+.b-logo b{
+	font-family: "ProximaNova";
+	font-weight: 700;
+    color: #fff;
+}
 
+.b-header-right{
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
+	border: 1px solid #e0e8f0;
+	border-radius: 20px;
+}
+.btn-callback{
+	width: 177px;
+	height: 46px;
+	background: #64c3f9;
+	border-radius: 20px;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.b-phone{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px 0 0 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	color: #212529;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 19px;	
+	padding: 0 10px 0 20px;
+	text-decoration: none;
+}
+.b-menu{
+	margin: 30px 0 0 0;
+}
+.b-menu__wrap{
+
+}
+.b-menu__wrap ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+.b-menu__wrap ul li{
+	list-style: none;
+}
+.b-menu__wrap ul li a{
+	text-decoration: none;
+	display: block;
+	color: #212529;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding: 0 0 22px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 3px solid transparent;
+	transition: 0.3s;
+}
+.b-menu__wrap ul li a:hover{
+	border-color: #88551a;
+	transition: 0.3s;
+}
+
+/* -------------- b-main -------------- */
+.b-main{
+	background: url(../images/b-main-bg.jpg) center top no-repeat;
+	background-size: cover;
+	height: 630px;
+}
