@@ -1,0 +1,57 @@
+
+   
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url('../webfonts/ProximaNovaBold.eot');
+    src: url('../webfonts/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNovaBold.woff') format('woff'),
+    url('../webfonts/ProximaNovaBold.ttf') format('truetype'),
+    url('../webfonts/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url('../webfonts/ProximaNova-Light.eot');
+    src: url('../webfonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNova-Light.woff') format('woff'),
+    url('../webfonts/ProximaNova-Light.ttf') format('truetype'),
+    url('../webfonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}  
+@font-face {
+    font-family: "ProximaNova";
+    src: url('../webfonts/ProximaNovaRegular.eot');
+    src: url('../webfonts/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNovaRegular.woff') format('woff'),
+    url('../webfonts/ProximaNovaRegular.ttf') format('truetype'),
+    url('../webfonts/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url('../webfonts/ProximaNova-Semibold.eot');
+    src: url('../webfonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNova-Semibold.woff') format('woff'),
+    url('../webfonts/ProximaNova-Semibold.ttf') format('truetype'),
+    url('../webfonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}  
+
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url('../webfonts/ProximaNovaT-Thin.eot');
+    src: url('../webfonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNovaT-Thin.woff') format('woff'),
+    url('../webfonts/ProximaNovaT-Thin.ttf') format('truetype'),
+    url('../webfonts/ProximaNovaT-Thin.svg#ProximaNovaT-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}  
