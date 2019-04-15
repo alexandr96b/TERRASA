@@ -310,19 +310,30 @@ textarea{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+.btn-xs{
+	display: none;
+}
+.b-mobile{
+	display: none;
+}
 .b-container{
-
+	padding: 137px 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .fancybox-container{
 	z-index: 999999;
 }
-
-
 /* End Total css ====*/
 
-/* -------------- page index -------------- */
+/* -------------- header -------------- */
 .b-header{
-
+	position: absolute;
+	width: 100%;
+	top: 0;
+	background: #ffffff;
+	transition: 0.3s;
 }
 .b-header-top > .container > .row > div{
 	display: flex;
@@ -436,6 +447,18 @@ textarea{
 	border-color: #88551a;
 	transition: 0.3s;
 }
+.b-header.active{
+	position: fixed;
+	transition: 0.3s;
+	z-index: 300;
+	box-shadow: 0 0 49px rgba(30, 27, 28, 0.36);	
+}
+.b-header.active .b-menu {
+    margin: 13px 0 0 0;
+}
+.b-header.active .b-menu__wrap ul li a{
+	padding: 0 0 5px 0;
+}
 /* -------------- b-main -------------- */
 .b-main{
 	background: url(../images/b-main-bg.jpg) center top no-repeat;
@@ -459,7 +482,7 @@ textarea{
 }
 .b-main-title{
 	color: #ffffff;
-	font-size: 58px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 66px;
 	text-transform: uppercase;
@@ -1119,4 +1142,263 @@ textarea{
     position: absolute;
     top: 0;
     right: 0;
+}
+
+
+.b-modal .modal-dialog{
+	pointer-events: inherit;
+	max-width: inherit;
+	width: 600px;
+	background: #ffffff;
+	border: 5px solid #64c3f9;
+	box-shadow: 0 0 49px rgba(30, 27, 28, 0.36);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 50px auto 0;
+}
+.b-modal-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #64c3f9;
+}
+.b-modal-top b{
+	color: #ffffff;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+.b-modal-step {
+	border: 1px solid #a0dafb;
+	border-radius: 18px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px 10px;
+}
+.b-modal-step span{
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.b-modal-choice{
+	background: #ffffff;
+	padding: 25px 20px 25px 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-modal-choice .b-checkbox input[type="radio"] + label{
+	justify-content: flex-start;
+}
+.b-modal-choice .b-checkbox input[type="radio"] + label span{
+	border: 2px solid #cdd5dd;
+}
+.b-modal-choice .b-checkbox-two input[type="radio"]:checked + label span{
+	background: url(../images/check2.png) center no-repeat;
+	border: 2px solid #253e50;
+}
+.b-modal-choice .b-checkbox-two input[type="radio"]:checked + label i{
+	color: #253e50;
+}
+.b-modal-choice .b-checkbox{
+	margin: 0 0 11px 0;
+}
+.b-modal-choice .b-checkbox:last-child{
+	margin: 0;
+}
+.b-modal-choice__bottom{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 15px 0 0 0;
+}
+.btn-next{
+	width: 182px;
+	height: 52px;
+	background: #64c3f9;
+	border-radius: 26px;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 22px;
+	text-transform: uppercase;
+	display: block;
+}
+
+
+.modal-card .modal-dialog{
+	pointer-events: inherit;
+	max-width: inherit;
+	width: 880px;
+	background: #ffffff;
+	border: 5px solid #64c3f9;
+	box-shadow: 0 0 49px rgba(30, 27, 28, 0.36);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 50px auto 0;
+	padding: 50px 40px;
+}
+.modal-close{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 17px;
+	height: 17px;
+	background: url(../images/close.png) no-repeat;
+}
+.b-card-top{
+	text-align: center;
+	margin: 0 0 50px 0;
+}
+.b-card-top span{
+	color: #88551a;
+	font-family: "ProximaNova";
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 38px;
+}
+.b-card-wrap{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.b-card-img{
+	width: 427px;
+	border: 1px solid #e0e8f0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	margin: 0 30px 0 0;
+}
+.b-card-right{
+
+}
+.b-card-right b{
+	display: block;
+	color: #88551a;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 55px;
+	text-transform: uppercase;
+}
+.b-card-right p{
+	color: #6a6c6e;
+	font-family: "ProximaNova";
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 26px;
+	margin: 30px 0;
+}
+.b-card-btn{
+	width: 249px;
+	height: 72px;
+	background: #64c3f9;
+	border-radius: 36px;
+	color: #ffffff;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	display: block;
+}
+.b-card-item{
+	color: #64c3f9;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 25px 0 0 0;
+}
+.b-card-item:before{
+	content: "";
+	background: url(../images/b-card-item__ico.png) no-repeat;
+	width: 20px;
+	height: 16px;
+	flex-shrink: 0;
+	margin: 0 10px 0 0;
+}
+
+.b-card-nav{
+	margin: 40px 0 30px 0;
+	border-bottom: 1px solid #e0e8f0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-card-nav ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.b-card-nav ul li{
+	list-style: none;
+}
+.b-card-nav ul li a{
+	display: block;
+	color: #64c3f9;
+	font-size: 26px;
+	font-weight: 400;
+	line-height: 28px;	
+	padding: 16px 29px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: 0.3s;
+	border-radius: 10px 10px 0 0;
+	text-decoration: none;
+}
+.b-card-nav ul li a.active{
+	background: #64c3f9;
+	transition: 0.3s;
+	color: #ffffff;
+}
+
+.b-card-info{
+
+}
+.b-card-info span{
+	display: block;
+	color: #88551a;
+	font-family: "ProximaNova";
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 32px;
+	margin: 0 0 20px 0;
+}
+.b-card-info ul{
+	padding: 0 0 0 24px;
+}
+.b-card-info ul li{
+	color: #253e50;
+	font-family: "ProximaNova";
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.b-card-info p{
+	color: #253e50;
+	font-family: "ProximaNova";
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.b-card-info p strong{
+	color: #88551a;
+	text-decoration: underline;
 }

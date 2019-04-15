@@ -33,48 +33,141 @@
 <body>
 
 
-<div class="modal b-modal fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-callback" aria-hidden="true">
+<div class="modal b-modal fade" id="modal-choice" tabindex="-1" role="dialog" aria-labelledby="modal-choice" aria-hidden="true">
 	<div class="modal-dialog">
-		<button data-dismiss="modal" class="modal-close"></button>
-        <div class="b-modal-top">
-        	<b>Мы вам перезвоним<br/>
-			в течение 15 минут</b>
-        </div>
-        <div class="b-modal-form">
-			<form class="validate" action="">
-				<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
-				<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
-				<div class="b-checkbox">
-					<input type="checkbox" checked id="g1" name="g4" />
-					<label for="g1"><span></span><i>Даю согласие на обработку<br/> моих
-					персональных данных</i></label>  
-				</div>	
-				<input class="b-input-btn red-btn" type="submit" value="перезвонить">
-			</form>
-        </div>
+		<div class="b-modal-top">
+			<b>Что будем строить?</b>
+			<div class="b-modal-step">
+				<span>шаг 1/5</span>
+			</div>
+		</div>
+		<div class="b-modal-choice">
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n1" name="w1" />
+              <label for="n1"><span></span><i>Террасса</i></label>  
+            </div>
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n2" name="w1" />
+              <label for="n2"><span></span><i>Крыльцо</i></label>  
+            </div>
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n3" name="w1" />
+              <label for="n3"><span></span><i>Настил в помещении</i></label>  
+            </div>
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n4" name="w1" />
+              <label for="n4"><span></span><i>Отделка балкона/лоджии</i></label>  
+            </div>	
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n5" name="w1" />
+              <label for="n5"><span></span><i>Площадь возле бассейна</i></label>  
+            </div>
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n6" name="w1" />
+              <label for="n6"><span></span><i>На загородном участке</i></label>  
+            </div>
+            <div class="b-checkbox b-checkbox-two">
+              <input type="radio" checked id="n7" name="w1" />
+              <label for="n7"><span></span><i>Другое</i></label>  
+            </div>	
+            <div class="b-modal-choice__bottom">
+            	<button class="btn-next blue-btn">Далее</button>
+            </div>	                                    	            
+		</div>
 	</div>
 </div>
 
 
-<div class="modal b-modal fade" id="modal-ras" tabindex="-1" role="dialog" aria-labelledby="modal-ras" aria-hidden="true">
+<div class="modal modal-card fade" id="card1" tabindex="-1" role="dialog" aria-labelledby="card1" aria-hidden="true">
 	<div class="modal-dialog">
 		<button data-dismiss="modal" class="modal-close"></button>
-        <div class="b-modal-top">
-        	<b>Получите расчёт<br/>
-			стоимости за 3 минуты</b>
-        </div>
-        <div class="b-modal-form">
-			<form class="validate" action="">
-				<input class="b-input-text b-input-name" name="name" type="text" placeholder="Представьтесь">
-				<input class="b-input-text b-input-phone" name="phone" type="text" placeholder="Ваш телефон">
-				<div class="b-checkbox">
-					<input type="checkbox" checked id="h1" name="h4" />
-					<label for="h1"><span></span><i>Даю согласие на обработку<br/> моих
-					персональных данных</i></label>  
-				</div>	
-				<input class="b-input-btn red-btn" type="submit" value="Получить">
-			</form>
-        </div>
+		<div class="b-card-top">
+			<span>Террасная доска ECODECKING velvet</span>
+		</div>
+		<div class="b-card-wrap">
+			<div class="b-card-img">
+				<img src="images/b-card-img.jpg" alt="">
+			</div>
+			<div class="b-card-right">
+				<b>1580 руб/м<sup>2</sup></b>
+				<p>Рекомендованная розничная цена
+				без учета комплектующих, 
+				в т.ч. НДС 20%</p>
+				<button class="b-card-btn blue-btn">Заказать</button>
+				<div class="b-card-item">Есть в наличии</div>
+			</div>
+		</div>
+		<div class="b-card-nav">
+			<ul class="nav">
+				<li><a class="active" href="#tab1" data-toggle="tab">Описание</a></li>
+				<li><a href="#tab2" data-toggle="tab">Характеристики</a></li>
+			</ul>
+		</div>
+		<div class="tab-content">
+			<div class="tab-pane active" id="tab1">
+				<div class="b-card-info">
+					<span>Цвет:</span>
+					<ul>
+						<li>венге</li>
+						<li>коричневый</li>
+						<li>серый</li>
+						<li>желтый</li>
+						<li>терракот</li>
+						<li>слоновая кость.</li>
+					</ul>
+
+					<span>Размеры:</span>
+					<ul>
+						<li>толщина — 25 мм</li>
+						<li>ширина — 145 мм</li>
+						<li>длина — 3000 мм</li>
+					</ul>
+					<p>Изготовление по размерам заказчика — Да</p>
+
+					<span>Расход материалов на 1 м <sup>2</sup>:</span>
+					<ul>
+						<li>Террасная доска — 6,9 п.м.</li>
+						<li>Подкладочный профиль (лага) — 2,7 м.</li>
+						<li>Монтажная клипса — 21 шт.</li>
+					</ul>
+
+					<span>Состав:</span>
+					<ul>
+						<li>47% — древесная мука (первичное сырье — не переработанное);</li>
+						<li>47% — первичный ПВХ;</li>
+						<li>6% — красящие и и функциональные добавки высокой светостойкости, 
+						обеспечивающие долговечность продукции.</li>
+					</ul>									
+					<p>Декинг из древесно-полимерного композита ECODECKING 
+					производится в России с 2011 года.</p>
+					<p>На все физико-химические свойства декинга предоставляется 
+					гарантия производителя — 3 года. При этом, срок ее эксплуатации 
+					без дополнительной обработки составляет до 25 лет! В зависимости 
+					от условий применения.</p>
+					<p>Вся продукция <strong>сертифицирована</strong>.</p>
+				</div>
+			</div>
+			<div class="tab-pane" id="tab2">
+				<div class="b-card-info">
+					<span>Размеры:</span>
+					<ul>
+						<li>толщина — 25 мм</li>
+						<li>ширина — 145 мм</li>
+						<li>длина — 3000 мм</li>
+					</ul>
+					<p>Изготовление по размерам заказчика — Да</p>
+
+					<span>Расход материалов на 1 м <sup>2</sup>:</span>
+					<ul>
+						<li>Террасная доска — 6,9 п.м.</li>
+						<li>Подкладочный профиль (лага) — 2,7 м.</li>
+						<li>Монтажная клипса — 21 шт.</li>
+					</ul>								
+					<p>Декинг из древесно-полимерного композита ECODECKING 
+					производится в России с 2011 года.</p>
+				</div>
+			</div>			
+		</div>
 	</div>
 </div>
 
@@ -97,8 +190,19 @@
 							</a>
 							<div class="b-header-right">
 								<a href="tel:8 (495) 191-18-24" class="b-phone">8 (495) 191-18-24</a>
-								<button class="btn-callback blue-btn">заказать звонок</button>
+								<button class="btn-callback blue-btn" >заказать звонок</button>							
 							</div>
+							<div class="b-mobile">
+							    <div class="menu-icon">
+							        <div class="menu-icon__wrapper">
+							            <span class="b-menu__icon">
+							                <i class="b-menu__line b-menu__line_1"></i>
+							                <i class="b-menu__line b-menu__line_2"></i>
+							                <i class="b-menu__line b-menu__line_3"></i>
+							            </span>
+							        </div>
+							    </div> 
+							</div>								
 						</div>
 					</div>
 				</div>
@@ -118,6 +222,7 @@
 									<li><a href="">доп. производство</a></li>
 									<li><a href="">контакты</a></li>
 								</ul>
+								<button class="btn-callback btn-xs blue-btn">заказать звонок</button>	
 							</div>
 						</div>
 					</div>
@@ -240,7 +345,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Velvet</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -252,7 +357,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска HIT</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -264,7 +369,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Vintage</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -276,7 +381,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Classic</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -288,7 +393,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Standart</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -300,7 +405,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Business</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -312,7 +417,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Titan</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -324,7 +429,7 @@
 								<div class="b-catalog-item__content">
 									<span>ДПК доска Premium</span>
 									<b>1580 РУБ/М<sup>2</sup></b>
-									<button class="btn-order blue-btn">Заказать</button>
+									<button class="btn-order blue-btn" data-toggle="modal" data-target="#card1">Заказать</button>
 								</div>
 							</div>
 						</div>																		
@@ -352,7 +457,7 @@
 						использование идеальным на объектах, где применение массива недопустимо.
 
 						</p>
-						<button class="b-main-btn blue-btn">Получить бесплатные образцы</button>	
+						<button class="b-main-btn blue-btn" data-toggle="modal" data-target="#modal-choice">Получить бесплатные образцы</button>	
 					</div>
 				</div>
 			</div>
@@ -772,7 +877,7 @@
 						и постоянному воздействию влаги. В течение всего периода эксплуатации полимерная продукция<br/>
 						сохраняет свою исходную геометрию и цвет. Температурный диапазон использования<br/>
 						достаточно широк и колеблется от -400 до +700C. </p>
-						<button class="b-cooperation-btn blue-btn">получить предложение</button>
+						<button class="b-cooperation-btn blue-btn" data-toggle="modal" data-target="#modal-choice">получить предложение</button>
 					</div>
 				</div>
 			</div>
@@ -890,7 +995,6 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9-H5GwlZA4EkUorU0gGHrq0H4pFMPS4"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

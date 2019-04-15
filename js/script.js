@@ -43,7 +43,7 @@ $('.b-reviews-slider > .row').slick({
   {
     breakpoint: 768,
     settings: {
-      slidesToShow: 2,   
+      slidesToShow: 1,   
       slidesToScroll: 1
     }
   }
@@ -82,7 +82,7 @@ $('.b-blocks-content > .row').slick({
   {
     breakpoint: 768,
     settings: {
-      slidesToShow: 1,  
+      slidesToShow: 2,  
       slidesToScroll: 1
     }
   }
@@ -93,17 +93,19 @@ $('.b-blocks-content > .row').slick({
 });
 
 
-
-
-
-
-$(".b-nav__wrap a").click(function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-        header = $('.b-header').outerHeight();
-    $('body,html').animate({scrollTop: top - header}, 700);
+$('.menu-icon').click(function(){
+  $('.b-menu').toggleClass('active');
+  $(this).toggleClass('active');
 });
+
+$(document).on('click', function(e) {
+  if (!$(e.target).closest(".menu-icon , .b-menu ul li a").length) {
+    $('.b-menu').removeClass('active');
+    $('.menu-icon').removeClass('active');
+  }
+  e.stopPropagation();
+});
+
 
 $(".b-menu ul li a").click(function (event) {
     event.preventDefault();
@@ -136,108 +138,18 @@ $(window).scroll( function (){
 
   });
 
-$('.menu-icon').click(function(){
-  $('.b-menu').toggleClass('active');
-  $(this).toggleClass('active');
-});
-
-$(document).on('click', function(e) {
-  if (!$(e.target).closest(".menu-icon , .b-menu ul li a").length) {
-    $('.b-menu').removeClass('active');
-    $('.menu-icon').removeClass('active');
-  }
-  e.stopPropagation();
-});
-
-$('.menu-close').click(function(){
-  $('.menu-icon').removeClass('active');
-  $('.b-menu').removeClass('active');
-});
 
 
 
-$('.validate').each(function() {
-    $(this).validate({
-
-    rules: {
-        name: {
-            required: true
-        },
-        password: {
-            required: true
-        },
-        rep_password: {
-            required: true
-        },                
-        email: {
-            required: true,
-            email: true
-        },
-        phone: {
-            required: true,
-            minlength: 10
-        },
-  check: {
-    required: true
-  }
-    },
-    messages: {
-        name: {
-            required: "Заполните ваше имя"
-        },
-        email: {
-            required: "Электронная почта обязательна к заполнению",
-            email: "Введите корректную электронную почту"
-        },
-        password: {
-            required: "Электронная почта обязательна к заполнению",
-            password: "Введите пароль"
-        },
-        rep_password: {
-            required: "Электронная почта обязательна к заполнению",
-            rep_password: "Введите пароль"
-        },                
-        phone: {
-            required: "Ваш номер телефона обязателен к заполнению",
-    minlength: $.validator.format( "В номере телефона должно быть 10 цифр." ),
-        },
-        check: {
-            required: "Пожалуйста, поставьте галочку соглашения с нашей политикой конфиденциальности"
-        }
-    },
-errorPlacement: function(error, input) {
-  error.insertBefore(input);
-}
-});
-$.extend( $.validator.messages, {
-      required: "Это поле необходимо заполнить.",
-      remote: "Пожалуйста, введите правильное значение.",
-      email: "Пожалуйста, введите корректный адрес электронной почты.",
-      url: "Пожалуйста, введите корректный URL.",
-      date: "Пожалуйста, введите корректную дату.",
-      dateISO: "Пожалуйста, введите корректную дату в формате ISO.",
-      number: "Пожалуйста, введите число.",
-      digits: "Пожалуйста, вводите только цифры.",
-      creditcard: "Пожалуйста, введите правильный номер кредитной карты.",
-      equalTo: "Пожалуйста, введите такое же значение ещё раз.",
-      extension: "Пожалуйста, выберите файл с правильным расширением.",
-      maxlength: $.validator.format( "Пожалуйста, введите не больше {0} символов." ),
-      minlength: $.validator.format( "Пожалуйста, введите не меньше {0} символов." ),
-      rangelength: $.validator.format( "Пожалуйста, введите значение длиной от {0} до {1} символов." ),
-      range: $.validator.format( "Пожалуйста, введите число от {0} до {1}." ),
-      max: $.validator.format( "Пожалуйста, введите число, меньшее или равное {0}." ),
-      min: $.validator.format( "Пожалуйста, введите число, большее или равное {0}." )
-    });
-});
 
 
 
 // google maps
 
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init2);
+google.maps.event.addDomListener(window, 'load', init);
 
-function init2() {
+function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
@@ -278,34 +190,6 @@ function init2() {
 
 
 
-
-function moveMenu(){
-  if ($(window).width() < 768) {
-         $(function(){ 
-
-/*
-          $('.b-phone').appendTo('.b-menu');
-          $('.btn-callback').appendTo('.b-menu');*/
-
-        
-           
-        })            
-  } else{
-         $(function(){ 
-
-/*          $('.b-phone').appendTo('.b-phone-wrap');
-          $('.btn-callback').appendTo('.btn-callback__wrap');*/
-
-           
-     })        
-  }
-}
-moveMenu();
-
-$(window).resize(function(){
-    moveMenu();
-});
- 
 
 
 
