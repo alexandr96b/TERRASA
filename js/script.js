@@ -1,52 +1,65 @@
 $(document).ready(function () {
 
-timer(3300, '.b-timer__item .hour', '.b-timer__item .min', '.b-timer__item .sec');
 
-function timer(value, hourBlock, minBlock, secBlock){
-
-        var timerValue = value;
-
-        function time(timestamp){
-          if (timestamp < 0) timestamp = 0;
-
-
-          var mins = Math.floor((timestamp)/60);
-          var secs = Math.floor(timestamp - mins*60);
-          var left_hour = Math.floor( 60 / 60 );
-
-
-          $(minBlock).text(function(){
-            if (mins < 10){
-              mins = "0" + mins;
-            }
-            return mins;
-          });              
-          $(secBlock).text(function(){
-            if (secs < 10){
-              secs = "0" + secs;
-            }
-            return secs;
-          }); 
-        }
-        setInterval(function(){
-          timerValue = timerValue - 1;
-          if(timerValue==1)document.location.reload();
-          time(timerValue);
-        }, 1000);
-      }
-
-$('.b-foto-slider').slick({
+$('.b-production-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: false,
-    variableWidth: true,
-    infinity: true,
-    centerMode: true,
+    variableWidth: false,
     adaptiveHeight: true,
-    focusOnSelect: true,
     arrows: true,
+     appendArrows: '.b-production-nav',
+    nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
+    prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',   
     dots: false
 });
+
+
+$('.b-foto-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  centerMode: true,
+  variableWidth: true,
+  adaptiveHeight: true,
+  arrows: true,
+  nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
+  prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',
+  focusOnSelect: true,
+  responsive: [
+  {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      variableWidth: false,
+      centerMode: false,
+      adaptiveHeight: false,      
+      slidesToScroll: 1
+    }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
+});
+
+
+
+
 
 
 $(".b-nav__wrap a").click(function (event) {
