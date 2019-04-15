@@ -16,12 +16,138 @@
 
 }
 @media (max-width: 1200px) {
-
+	.b-menu__wrap ul li a{
+		font-size: 17px;
+	}
+	.b-main-title{
+		font-size: 38px;
+		line-height: 55px;
+		margin: 0 0 30px 0;
+	}
+	.b-main-content{
+		display: block;
+	}
+	.b-main-item{
+		width: auto;
+		margin: 0 0 25px 0;
+	}
+	.b-about p br{
+		display: none;
+	}
+	.b-info-item__text span{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.b-project-item__text span{
+		font-size: 25px;
+		line-height: 28px;
+	}
+	.b-project-item__text p{
+		font-size: 16px;
+	}
+	.b-advantages-left {
+	    max-width: 550px;
+	    margin: 0 30px 0 0;
+	}	
+	.b-production-right{
+		width: 320px;
+	}
+	.b-production-text p{
+		font-size: 15px;
+	}
+	.b-cooperation p br{
+		display: none;
+	}
 }	
 
 
-@media (max-width: 991px){
 
+@media (max-width: 991px){
+	.b-main-right{
+		margin: 0 0 0 25px;
+		width: 340px;
+	    padding: 25px 13px;
+	}
+	.b-main-title{
+		font-size: 28px;
+		line-height: 44px;
+		margin: 0 0 30px 0;
+	}
+	.b-main-right .b-main-btn{
+		width: 100%;
+	}
+	.b-menu__wrap ul li a {
+	    font-size: 14px;
+	    line-height: 16px;
+	    text-transform: capitalize;
+	}	
+	.b-info-item__img img{
+		width: 100%;
+	}
+	.b-advantages-left{
+		max-width: 50%;
+	}
+	.b-advantages-left b{
+		font-size: 26px;
+		line-height: 28px;
+	}
+	.b-advantages-left span{
+		font-size: 19px;
+	}
+	.b-advantages-left p{
+		font-size: 15px;
+		line-height: 26px;
+	}
+	.b-production-wrap{
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+	.b-production-text{
+		margin: 25px 0 0 0;
+		text-align: center;
+	}
+	.b-production-right{
+		width: 400px;
+		margin: 0 auto 0;
+	}
+	.b-footer-input{
+		width: 100%;
+	}
+	.b-footer-btn{
+		width: 100%;
+	}
+	.b-footer-block{
+		max-width: 300px;
+	}
+	.b-footer-block ul li{
+		font-size: 15px;
+		line-height: 35px;
+	}
+	.b-footer{
+		padding: 40px 0;
+	}
+	section{
+		padding: 40px 0 !important;
+	}
+	.b-footer-block ul{
+		padding: 0 0 15px 0;
+		margin: 0 0 15px 0;
+	}
+	.b-footer-top{
+		font-size: 25px;
+		line-height: 27px;
+		margin: 0 0 15px 0;
+	}
+	.b-cooperation p{
+		font-size: 16px;
+	}
+	.b-about p{
+		font-size: 16px;
+	}
+	.b-title{
+		margin: 0 0 25px 0;
+	}
 }
 
 @media (max-width: 767px) {

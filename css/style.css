@@ -444,7 +444,7 @@ textarea{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	height: 630px;
+/* 	height: 630px; */
 }
 .b-main > .container > .row > div{
 	display: flex;
@@ -841,7 +841,6 @@ textarea{
 .b-advantages-item:last-child .b-advantages-item__ico:after{
 	display: none;
 }
-
 /* -------------- b-production -------------- */
 .b-production{
 	background: url(../images/b-production-bg.jpg) center top no-repeat;
@@ -911,4 +910,213 @@ textarea{
 	justify-content: center;
 	align-items: center;
 	margin: 15px 0 0 0;
+}
+/* -------------- b-reviews -------------- */
+.b-reviews{
+	padding: 75px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-title-two{
+	position: relative;
+	padding: 25px 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-title-two:before{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	content: "";
+	margin: 0 0 0 -27.5px;
+	width: 55px;
+	height: 5px;
+	background: #64c3f9;
+	border-radius: 3px;	
+}
+.b-reviews-item{
+	text-align: center;
+	padding: 0 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-reviews-item b{
+	display: block;
+	color: #88551a;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 30px;	
+}
+.b-reviews-item span{
+	display: block;
+	color: #87898c;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 10px 0;
+}
+.b-reviews-item p{
+	color: #6a6c6e;
+	font-family: "ProximaNova";
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+}
+.b-reviews .b-arrow{
+	position: absolute;
+	top: 12%;
+}
+.b-reviews .b-arrow__prev{
+	left: 0;
+}
+.b-reviews .b-arrow__next{
+	right: 0;
+}
+/* -------------- b-cooperation -------------- */
+.b-cooperation{
+	padding: 90px 0 120px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url(../images/b-cooperation-bg.jpg) center top no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.b-cooperation h2{
+	color: #ffffff;
+}
+.b-cooperation p{
+	color: #ffffff;
+	font-family: "ProximaNova";
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 32px;
+	margin: 30px 0 40px 0;
+}
+.b-cooperation-btn{
+	width: 363px;
+	height: 77px;
+	background: #64c3f9;
+	border-radius: 39px;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 23px;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto 0;
+}
+/* -------------- b-blocks -------------- */
+.b-blocks{
+	padding: 75px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-blocks-item{
+
+}
+.b-blocks-item__img{
+	margin: 0 0 30px 0;
+}
+.b-blocks-item span{
+	display: block;
+	color: #88551a;
+	font-size: 33px;
+	font-weight: 400;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.b-blocks-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 35px 0 0 0;
+}
+
+/* -------------- b-blocks -------------- */
+.b-footer{
+	background: #212529;
+	padding: 81px  0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.b-footer-block{
+	max-width: 476px;
+}
+.b-footer-top{
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 44px;
+	text-transform: uppercase;	
+	display: block;
+	margin: 0 0 22px 0;
+}
+.b-footer-block ul{
+	padding: 0 0 30px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 0 30px 0;
+	border-bottom: 2px solid #15181b;
+}
+.b-footer-block ul li{
+	list-style: none;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 32px;
+	position: relative;	
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.b-footer-block ul li:before{
+	content: "";
+	width: 15px;
+	height: 1px;
+	background: #ffffff;	
+	display: block;
+	margin: 16px 16px 0 0;
+}
+.b-footer-input{
+	width: 365px;
+	height: 50px;
+	background: #ffffff;
+	color: #212529;
+	font-family: "ProximaNova";
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 18px;
+	display: block;
+	padding: 0 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 0 9px 0;
+}
+.b-footer-btn{
+	width: 365px;
+	height: 50px;
+	background: #64c3f9;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 22px;
+	text-transform: uppercase;
+	display: block;
+}
+
+#map {
+    width: 52%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

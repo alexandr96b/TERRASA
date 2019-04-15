@@ -15,12 +15,11 @@ $('.b-production-slider').slick({
 });
 
 
-$('.b-foto-slider').slick({
-  slidesToShow: 1,
+$('.b-reviews-slider > .row').slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
   fade: false,
-  centerMode: true,
-  variableWidth: true,
+  variableWidth: false,
   adaptiveHeight: true,
   arrows: true,
   nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
@@ -30,24 +29,60 @@ $('.b-foto-slider').slick({
   {
     breakpoint: 1200,
     settings: {
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1
     }
   },
   {
     breakpoint: 992,
     settings: {
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1
     }
   },
   {
     breakpoint: 768,
     settings: {
-      slidesToShow: 1,
-      variableWidth: false,
-      centerMode: false,
-      adaptiveHeight: false,      
+      slidesToShow: 2,   
+      slidesToScroll: 1
+    }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
+});
+
+$('.b-blocks-content > .row').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  fade: false,
+  variableWidth: false,
+  adaptiveHeight: true,
+  arrows: true,
+  appendArrows: '.b-blocks-nav',
+  nextArrow: '<button class="b-arrow b-arrow__next">→</button>',
+  prevArrow: '<button class="b-arrow b-arrow__prev">←</button>',
+  focusOnSelect: true,
+  responsive: [
+  {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,  
       slidesToScroll: 1
     }
   }
@@ -197,14 +232,12 @@ $.extend( $.validator.messages, {
 
 
 
-
- 
 // google maps
 
 // When the window has finished loading create our google map below
-google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'load', init2);
 
-function init() {
+function init2() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
@@ -214,204 +247,10 @@ function init() {
 
         // The latitude and longitude to center the map (always required)
 
-        center: new google.maps.LatLng(54.958762, 20.471604), // New York
+        center: new google.maps.LatLng(55.772643, 37.678384), // ZP
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
-        styles: [
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "lightness": "15"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.country",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "saturation": "-100"
-            },
-            {
-                "lightness": "23"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": "43"
-            },
-            {
-                "lightness": "46"
-            },
-            {
-                "gamma": 1
-            },
-            {
-                "color": "#ffffff"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.terrain",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "16"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#78ff00"
-            },
-            {
-                "saturation": "22"
-            },
-            {
-                "lightness": "50"
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "lightness": "-27"
-            },
-            {
-                "weight": "0.76"
-            },
-            {
-                "saturation": "0"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "49"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "lightness": "-12"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#0011ff"
-            },
-            {
-                "saturation": "-84"
-            },
-            {
-                "lightness": "59"
-            },
-            {
-                "gamma": 1
-            },
-            {
-                "weight": "0.50"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway.controlled_access",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "0"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff0300"
-            },
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 51.19999999999999
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#FF0300"
-            },
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 52
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "7"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#009dff"
-            },
-            {
-                "saturation": "-2"
-            },
-            {
-                "lightness": "10"
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    }
-]
     };
 
     // Get the HTML DOM element that will contain your map 
@@ -423,21 +262,18 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({ 
-        position: new google.maps.LatLng(54.958762, 20.471604),
-        map: map,
-        title: 'Snazzy!',
-                icon: {
-                    url: "images/map-ico.svg",
-                    scaledSize: new google.maps.Size(40, 45),
-                    labelOrigin: new google.maps.Point(145, 25, 5),
-                    origin: new google.maps.Point(0, 0),
-                    anchor: new google.maps.Point(36, 49)           
-                }      
-
-    });
-
+    position: new google.maps.LatLng(55.772643, 37.678384),
+    map: map,
+/*    title: 'Snazzy!',
+            icon: {
+        url: "images/logo.svg",
+        scaledSize: new google.maps.Size(60, 60),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(40, 80)
+    }
+*/
+    }); 
 }
-
 
 
 
@@ -447,9 +283,9 @@ function moveMenu(){
   if ($(window).width() < 768) {
          $(function(){ 
 
-
+/*
           $('.b-phone').appendTo('.b-menu');
-          $('.btn-callback').appendTo('.b-menu');
+          $('.btn-callback').appendTo('.b-menu');*/
 
         
            
@@ -457,8 +293,8 @@ function moveMenu(){
   } else{
          $(function(){ 
 
-          $('.b-phone').appendTo('.b-phone-wrap');
-          $('.btn-callback').appendTo('.btn-callback__wrap');
+/*          $('.b-phone').appendTo('.b-phone-wrap');
+          $('.btn-callback').appendTo('.btn-callback__wrap');*/
 
            
      })        
