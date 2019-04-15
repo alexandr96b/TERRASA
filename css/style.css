@@ -710,3 +710,45 @@ textarea{
 	font-weight: 400;
 	line-height: 20px;
 }
+/* -------------- b-projects -------------- */
+.b-projects{
+	background: #f9f7f0;
+	padding: 70px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-projects-content{
+
+}
+.b-projects-item{
+
+}
+.b-project-item__img{
+}
+.b-project-item__img img{
+
+}
+.b-project-item__text{
+	padding: 30px 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-project-item__text span{
+	display: block;
+	color: #88551a;
+	font-size: 33px;
+	font-weight: 400;
+	line-height: 35px;
+	text-transform: uppercase;	
+	margin: 0 0 30px 0;
+}
+.b-project-item__text p{
+	color: #6a6c6e;
+	font-family: "ProximaNova";
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 32px;
+	margin: 0;
+}
