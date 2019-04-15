@@ -636,3 +636,29 @@ textarea{
 	display: block;
 	margin: 0 auto 0;
 }
+
+/* -------------- b-about -------------- */
+.b-about{
+	text-align: center;
+	background: url(../images/about-bg.jpg) center top no-repeat;
+	background-size: cover;
+	padding: 60px 0 90px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.b-about .b-title-item{
+	color: #ffffff;
+	margin: 0 0 40px 0;
+}
+.b-about p{
+	color: #ffffff;
+	font-family: "ProximaNova";
+	font-size: 19px;
+	font-weight: 600;
+	line-height: 32px;
+	margin: 0 0 45px 0;
+}
+.b-about .b-main-btn{
+	width: 369px;
+}
