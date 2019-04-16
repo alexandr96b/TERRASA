@@ -1,6 +1,13 @@
 $(document).ready(function () {
 
 
+$(".b-menu__wrap a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+  scrollSpeed: 1500,
+  offset: 80,
+  highlightSelector:".b-nav a",
+  forceSingleHighlight: true
+});
+
 $('.b-production-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

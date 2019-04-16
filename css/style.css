@@ -379,7 +379,19 @@ textarea{
 	font-weight: 700;
     color: #fff;
 }
-
+.b-header-pl{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
+	font-size: 16px;
+	line-height: 20px;
+}
+.b-header-pl i{
+	font-size: 25px;
+	line-height: 27px;
+	margin: 0 15px 0 0;
+}
 .b-header-right{
 	display: flex;
 	justify-content: flex-start;
